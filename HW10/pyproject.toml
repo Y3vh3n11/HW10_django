@@ -10,6 +10,7 @@ python = "^3.12"
 django = "^5.0.4"
 psycopg2 = "^2.9.9"
 pymongo = "^4.7.1"
+sqlalchemy = "^2.0.29"
 
 
 [build-system]

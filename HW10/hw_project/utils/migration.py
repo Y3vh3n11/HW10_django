@@ -49,8 +49,8 @@ def migration():
     for quote in quotes:
         tags = []
         for tag in quote['tags']:
-            t, *_ = Tag.objects.get_or_create(name=tag)
-            tags.append(t)
+            # t, *_ = Tag.objects.get_or_create(name=tag)
+            tags.append(tag)
         
         exist_quote = bool(len(Quote.objects.filter(quote=quote['quote'])))
 
