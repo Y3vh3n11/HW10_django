@@ -11,11 +11,11 @@ class Author(models.Model):
     create_at = models.DateTimeField(auto_now_add=True)
 
 
-class Tag(models.Model):
+class Tag(models.Model):  
     name = models.CharField(max_length=50, null=False, unique=True)
 
 
-class Quote(models.Model):
+class Quote(models.Model):    
     quote = models.TextField()
     tags = models.ManyToManyField(Tag)
     author = models.ForeignKey(
