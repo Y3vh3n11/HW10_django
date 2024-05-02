@@ -25,3 +25,4 @@ class RegisterView(View):
             messages.success(request, f"Вітаємо {username}. Ваш акаунт успішно створено")
             return redirect(to="users:login")
         return render(request, self.template_name, {"form": form})
+

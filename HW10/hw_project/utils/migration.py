@@ -10,15 +10,15 @@ sys.path.append(os.path.abspath('..'))
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'hw_project.settings')
 django.setup()
 
-from quotes.models import Quote, Tag, Author 
+# from quotes.models import Quote, Tag, Author 
 def get_mongodb():
     # config = configparser.ConfigParser()
     # config.read('config.ini')
 
-    # mongo_user = config.get('DB', 'user')
-    # mongodb_pass = config.get('DB', 'pass')
-    # db_name = config.get('DB', 'db_name')
-    # domain = config.get('DB', 'domain')
+    # mongo_user = config.get('DB', 'USER')
+    # mongodb_pass = config.get('DB', 'PASS')
+    # db_name = config.get('DB', 'DB_NAME')
+    # domain = config.get('DB', 'DOMAIN')
 
     mongo_user = 'codepraktik'
     mongodb_pass = 'it9AktJTWuXbqazI'
