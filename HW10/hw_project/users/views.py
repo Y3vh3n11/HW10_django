@@ -4,6 +4,7 @@ from django.contrib import messages
 from .forms import RegisterForm
 from django.contrib.auth import logout
 
+
 class RegisterView(View):
     template_name = "users/register.html"
     form_class = RegisterForm
@@ -32,4 +33,4 @@ class RegisterView(View):
 
 def logout_view(request):
     logout(request)
-    return redirect('users:login')
+    return redirect("users:login")

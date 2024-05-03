@@ -10,7 +10,7 @@ sys.path.append(os.path.abspath('..'))
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'hw_project.settings')
 django.setup()
 
-# from quotes.models import Quote, Tag, Author 
+
 def get_mongodb():
     # config = configparser.ConfigParser()
     # config.read('config.ini')

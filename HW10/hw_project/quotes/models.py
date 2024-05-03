@@ -1,7 +1,5 @@
 from django.db import models
 
-# Create your models here.
-
 
 class Author(models.Model):
     fullname = models.CharField(max_length=50)
@@ -11,14 +9,10 @@ class Author(models.Model):
     create_at = models.DateTimeField(auto_now_add=True)
 
 
-# class Tag(models.Model):  
-#     name = models.CharField(max_length=50, null=False, unique=True)
-
-
-# class Quote(models.Model):    
-#     quote = models.TextField()
-#     tags = models.ManyToManyField(Tag)
-#     author = models.ForeignKey(
-#         Author, on_delete=models.CASCADE, default=None, null=True
-#     )
-#     create_at = models.DateTimeField(auto_now_add=True)
+class Quote(models.Model):
+    quote = models.TextField()
+    tags = models.TextField()
+    author = models.ForeignKey(
+        Author, on_delete=models.CASCADE, default=None, null=True
+    )
+    create_at = models.DateTimeField(auto_now_add=True)
