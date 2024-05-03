@@ -32,6 +32,7 @@
         </button>
                 {% if user.is_authenticated %}
                 <div class="d-flex"><a class="nav-link" href="{% url 'users:logout' %}">Logout</a></div>
+                <div class="d-flex"><a class="nav-link" href="{% url 'quotes:author' %}">Add author</a></div>
 
                 {% else %}
                 <a class="nav-link" href="{% url 'users:signup' %}">Register</a>
